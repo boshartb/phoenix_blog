@@ -37,3 +37,4 @@ defmodule Pxblog.User do
       changeset
     end
   end
+end
