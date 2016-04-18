@@ -25,5 +25,11 @@ defmodule Pxblog.User do
   def changeset(model, params \\ :empty) do
     model
     |> cast(params, @required_fields, @optional_fields)
+    |> hash_password
+  end
+
+  defp hash_password(changeset) do
+    changeset
+    |> put_change(:password_digest, "ABCDE")
   end
 end
