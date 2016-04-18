@@ -1,4 +1,4 @@
-# Pxblog
+# Phoniex Blog with Tests.
 
 To start your Phoenix app:
 
